@@ -1,0 +1,26 @@
+[
+ {
+  "_id": "T1",
+  "tipo": "Informativo",
+  "titulo": "El desierto florido",
+  "contenido": "El Desierto de Atacama, en el norte de Chile, es considerado el más árido del planeta no polar. En algunas zonas no se han registrado lluvias en décadas. Sin embargo, cada cierto tiempo, tras lluvias excepcionales, ocurre el fenómeno del desierto florido: miles de semillas germinan y cubren el paisaje de flores. Los científicos advierten que este espectáculo podría volverse menos frecuente por el cambio climático."
+ },
+ {
+  "_id": "T2",
+  "tipo": "Narrativo",
+  "titulo": "El tren",
+  "contenido": "Mateo llegó a la estación cuando el tren ya se alejaba. Corrió unos metros, con la mochila golpeándole la espalda, hasta que comprendió que era inútil. Se sentó en una banca, abrió su cuaderno y, en vez de lamentarse, empezó a dibujar a la gente que esperaba. Cuando llegó el siguiente tren, tenía diez rostros en sus páginas y una sonrisa que nadie le había visto en meses."
+ },
+ {
+  "_id": "T3",
+  "tipo": "Argumentativo",
+  "titulo": "Celulares en clases",
+  "contenido": "Algunos sostienen que prohibir los celulares en las salas de clases mejoraría el rendimiento. Es cierto que las notificaciones distraen, pero eliminar el aparato por completo ignora que también sirve para consultar información y aprender. Más que prohibir, la escuela debería enseñar a usarlo con criterio; de lo contrario, los estudiantes llegarán a la vida adulta sin haber desarrollado autocontrol digital."
+ },
+ {
+  "_id": "T4",
+  "tipo": "Lírico",
+  "titulo": "El río",
+  "contenido": "Cada tarde el río baja\ncon sus piedras de memoria,\ny en el fondo de sus aguas\nduermen todas nuestras historias."
+ }
+]

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143d32">
+  <title>PAES Prep Chile | Practica y mejora</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">P</span><span>PAES Prep <b>Chile</b></span></a>
+    <nav class="top-actions" aria-label="Acceso de usuario">
+      <a class="nav-link" href="/temarios.html">Temarios DEMRE</a>
+      <a class="nav-link" href="/guia-paes.html">Consejos PAES</a>
+      <a class="nav-link" href="/login.html" id="login-link">Iniciar sesión</a>
+      <a class="nav-cta" href="/registro.html" id="register-link">Crear cuenta</a>
+      <span class="user-chip" id="user-chip" hidden></span>
+      <a class="nav-link" href="/estudiante.html" id="dashboard-link" hidden>Mi panel</a>
+      <a class="nav-link" href="/administrador.html" id="admin-link" hidden>Administración</a>
+      <button class="nav-link logout-btn" id="logout-btn" hidden>Cerrar sesión</button>
+      <span class="status" id="api-status">Conectando…</span>
+    </nav>
+  </header>
+  <main class="layout">
+    <section class="hero">
+      <p class="eyebrow">TU PREPARACIÓN, A TU RITMO</p>
+      <h1>Practica hoy.<br><span>Avanza con confianza.</span></h1>
+      <p>Un espacio para reforzar tus conocimientos para la PAES, revisar tus respuestas y descubrir qué necesitas practicar más.</p>
+      <div class="hero-tags"><span>Matemática M1</span><span>Competencia Lectora</span><span>Historia y Ciencias Sociales</span><span>Ciencias · Biología, Física y Química</span></div>
+    </section>
+    <section class="workspace">
+      <aside class="filters panel">
+        <h2>Práctica</h2>
+        <label for="materia">Asignatura</label>
+        <select id="materia"><option value="">Todas</option><option value="matematica">Matemática M1</option><option value="lenguaje">Competencia Lectora</option><option value="historia">Historia y Ciencias Sociales</option><option value="ciencias">Ciencias</option></select>
+        <label for="eje">Eje o habilidad</label>
+        <select id="eje"><option value="">Todos</option></select>
+        <label for="dificultad">Nivel de práctica</label>
+        <select id="dificultad"><option value="">Todas</option><option value="1">Inicial</option><option value="2">Intermedia</option><option value="3">Avanzado</option></select>
+        <div class="stats"><span id="count">0 preguntas</span><span id="answered">0 respondidas</span></div>
+        <button class="secondary" id="load-btn">Aplicar filtros</button>
+      </aside>
+      <section class="panel questions-panel">
+        <div class="section-heading"><div><p class="eyebrow">ENTRENAMIENTO</p><h2>Elige una pregunta</h2></div><span class="pill" id="question-number">—</span></div>
+        <div id="question-area"><div class="empty"><div class="loader"></div><p>Cargando preguntas del banco…</p></div></div>
+        <div class="question-nav"><button class="secondary" id="prev-btn" disabled>← Anterior</button><button class="primary" id="next-btn" disabled>Siguiente →</button></div>
+      </section>
+    </section>
+    <section class="panel readings">
+      <div class="section-heading"><div><p class="eyebrow">LECTURA</p><h2>Textos de práctica</h2></div><span class="pill" id="text-count">—</span></div>
+      <p class="muted">Textos de apoyo para practicar habilidades de Competencia Lectora.</p>
+      <div id="texts-area" class="texts-grid"><p class="muted">Cargando textos…</p></div>
+    </section>
+    <footer>PAES Prep Chile · Practica, aprende y mejora a tu ritmo.</footer>
+  </main>
+  <div class="motivation-modal" id="motivation-modal" role="dialog" aria-modal="true" aria-labelledby="motivation-title" aria-describedby="motivation-message" hidden>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+    <section class="motivation-card">
+      <button class="motivation-close" id="motivation-close" aria-label="Cerrar ventana">×</button>
+      <div class="motivation-emoji" id="motivation-emoji" aria-hidden="true">🎉</div>
+      <p class="motivation-eyebrow">UN PASO MÁS CERCA DE TU META</p>
+      <h2 id="motivation-title">¡Lo lograste!</h2>
+      <p id="motivation-message">Cada pregunta es una oportunidad para avanzar.</p>
+      <div class="motivation-tip" id="motivation-tip">Este es uno de tus primeros desafíos. ¿Seguimos?</div>
+      <button class="primary motivation-continue" id="motivation-continue">¡Vamos con otra!</button>
+      <p class="motivation-footnote">Tu ritmo, tu progreso. No necesitas saberlo todo hoy.</p>
+    </section>
+  </div>
+  <script src="/auth-ui.js" defer></script>
+  <script src="/app.js" defer></script>
+</body>
+</html>
